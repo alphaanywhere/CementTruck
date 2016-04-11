@@ -1,0 +1,1066 @@
+html {
+-webkit-tap-highlight-color: transparent;
+-webkit-user-select: none;
+}
+button::-moz-focus-inner {
+border-width: 0;
+padding: 0;
+}
+/* main */
+.page {
+color: #000;
+background: #fff;
+font: 16px Arial, san-serif;
+}
+.page.compact {
+font-size: 12px;
+}
+.heading {
+color: gray;
+font-size: 125%;
+}
+.highlight {
+color: #6498FF;
+}
+.link {
+color: #6498FF;
+}
+.link:hover {
+text-decoration: none;
+}
+.group {
+border: 1px solid #d9d9d9;
+padding: 6px;
+border-radius: 4px;
+}
+.groupLabel {
+color: gray;
+font-size: 75%;
+}
+/* panels */
+.panelHeader {
+background: #f7f7f7;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #d9d9d9;
+padding: 12px;
+}
+.panelBody {
+background: #fff;
+padding: 12px;
+}
+.panelBody:before, .panelBody:after {
+background: rgba(0, 0, 0, 0.04);
+display: block;
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+height: 4px;
+content: "";
+}
+.panelBody:after {
+height: 2px;
+}
+.panelFooter {
+background: #f7f7f7;
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #d9d9d9;
+padding: 12px;
+}
+.panelDockBefore {
+background: #f7f7f7;
+border-right-style: solid;
+border-right-width: 1px;
+border-right-color: #ebebeb;
+padding-right: 1px;
+}
+.panelDockAfter {
+background: #f7f7f7;
+border-left-style: solid;
+border-left-width: 1px;
+border-left-color: #ebebeb;
+padding-left: 1px;
+}
+.panelDockBefore .panelBody:after, .panelDockBefore .panelBody:before, .panelDockAfter .panelBody:after, .panelDockAfter .panelBody:before {
+display: none;
+}
+.panelDockBefore .panelBody, .panelDockAfter .panelBody {
+background: #f7f7f7;
+}
+.compact .panelHeader, .compact .panelBody, .compact .panelFooter {
+padding: 4px;
+}
+/* tabs */
+.tabTop {
+border: 1px solid #ebebeb;
+padding: 0px;
+}
+.tabTopBand {
+text-align: center;
+background: #f2f2f2;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #ebebeb;
+}
+.tabTopTab, .tabTopTabSelected, .tabTopTabDisabled {
+text-decoration: none;
+color: gray;
+font-weight: bold;
+padding: 12px;
+display: inline-block;
+}
+.tabTopTabSelected {
+color: #6498FF;
+}
+.tabTopTabDisabled {
+color: #a6a6a6;
+}
+.tabTopPane {
+padding: 12px;
+}
+.compact .tabTopTab, .compact .tabTopTabSelected, .compact .tabTopTabDisabled, .compact .tabTopPane {
+padding: 4px;
+}
+/* window */
+.window {
+background: #fff;
+border: 1px solid #d9d9d9;
+border-radius: 2px;
+box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+.windowTitle {
+color: gray;
+font-size: 75%;
+font-weight: bold;
+padding: 12px;
+}
+.windowHeader, .windowFooter, .windowTBar, .windowBBar, .windowBody {
+padding: 6px 12px;
+}
+.windowButtons {
+text-align: center;
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #ebebeb;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #ebebeb;
+margin-bottom: -1px;
+}
+.windowButtons .button {
+border: none;
+margin: 0px;
+border-radius: 0px;
+}
+.windowResize {
+background: #f7f7f7;
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #ebebeb;
+height: 22px;
+}
+.compact .windowTitle {
+padding: 4px;
+}
+.compact .windowHeader, .compact .windowFooter, .compact .windowTBar, .compact .windowBBar, .compact .windowBody {
+padding: 2px 4px;
+}
+.compact .windowResize {
+height: 8px;
+}
+/* menu */
+.menu {
+background: #fff;
+border: 1px solid #d9d9d9;
+border-radius: 2px;
+box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+.menuItem {
+cursor: default;
+}
+.menuItemLabel {
+padding: 12px;
+display: inline-block;
+}
+.menuItemHover, .menuItemSelected {
+color: #fff;
+background: #6498FF;
+}
+.menuItemDisabled {
+color: gray;
+background: #fff;
+}
+.menuItemCascade {
+padding-right: 24px;
+position: relative;
+}
+.menuItemCascade:after {
+border: 5px solid transparent;
+border-left-color: gray;
+border-right-style: none;
+margin-top: -5px;
+display: block;
+position: absolute;
+top: 50%;
+right: 12px;
+width: 0px;
+content: "";
+}
+.menuItemHover .menuItemCascade:after, .menuItemSelected .menuItemCascade:after {
+border-left-color: #fff;
+}
+.menuSeparator {
+background: #ebebeb;
+height: 1px;
+}
+.menuTitle {
+color: gray;
+background: #f7f7f7;
+font-size: 75%;
+font-weight: bold;
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #ebebeb;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #ebebeb;
+padding: 4px;
+}
+.compact .menuItemLabel {
+padding: 4px;
+}
+.compact .menuItemCascade {
+padding-right: 8px;
+}
+.compact .menuItemCascade:after {
+border-width: 3px;
+margin-top: -3px;
+right: 4px;
+}
+/* pointer - window / menu */
+.pointerDown {
+border-top-style: solid;
+border-top-width: 10px;
+border-top-color: #d9d9d9;
+border-left-style: solid;
+border-left-width: 10px;
+border-left-color: transparent;
+border-right-style: solid;
+border-right-width: 10px;
+border-right-color: transparent;
+margin-left: -10px;
+left: 50%;
+bottom: -11px;
+width: 0;
+height: 0;
+}
+.pointerDown:after {
+border-top-style: solid;
+border-top-width: 10px;
+border-top-color: #fff;
+border-left-style: solid;
+border-left-width: 10px;
+border-left-color: transparent;
+border-right-style: solid;
+border-right-width: 10px;
+border-right-color: transparent;
+margin-left: -10px;
+display: block;
+position: absolute;
+left: 50%;
+bottom: 1px;
+width: 0;
+height: 0;
+content: "";
+}
+.pointerUp {
+border-left-style: solid;
+border-left-width: 10px;
+border-left-color: transparent;
+border-right-style: solid;
+border-right-width: 10px;
+border-right-color: transparent;
+border-bottom-style: solid;
+border-bottom-width: 10px;
+border-bottom-color: #d9d9d9;
+margin-left: -10px;
+top: -11px;
+left: 50%;
+width: 0;
+height: 0;
+}
+.pointerUp:after {
+border-left-style: solid;
+border-left-width: 10px;
+border-left-color: transparent;
+border-right-style: solid;
+border-right-width: 10px;
+border-right-color: transparent;
+border-bottom-style: solid;
+border-bottom-width: 10px;
+border-bottom-color: #fff;
+margin-left: -10px;
+display: block;
+position: absolute;
+top: 1px;
+left: 50%;
+width: 0;
+height: 0;
+content: "";
+}
+.pointerLeft {
+border-top-style: solid;
+border-top-width: 10px;
+border-top-color: transparent;
+border-right-style: solid;
+border-right-width: 10px;
+border-right-color: #d9d9d9;
+border-bottom-style: solid;
+border-bottom-width: 10px;
+border-bottom-color: transparent;
+margin-top: -10px;
+top: 50%;
+left: -11px;
+width: 0;
+height: 0;
+}
+.pointerLeft:after {
+border-top-style: solid;
+border-top-width: 10px;
+border-top-color: transparent;
+border-right-style: solid;
+border-right-width: 10px;
+border-right-color: #fff;
+border-bottom-style: solid;
+border-bottom-width: 10px;
+border-bottom-color: transparent;
+margin-top: -10px;
+display: block;
+position: absolute;
+top: 50%;
+left: 1px;
+width: 0;
+height: 0;
+content: "";
+}
+.pointerRight {
+border-top-style: solid;
+border-top-width: 10px;
+border-top-color: transparent;
+border-left-style: solid;
+border-left-width: 10px;
+border-left-color: #d9d9d9;
+border-bottom-style: solid;
+border-bottom-width: 10px;
+border-bottom-color: transparent;
+margin-top: -10px;
+top: 50%;
+right: -11px;
+width: 0;
+height: 0;
+}
+.pointerRight:after {
+border-top-style: solid;
+border-top-width: 10px;
+border-top-color: transparent;
+border-left-style: solid;
+border-left-width: 10px;
+border-left-color: #fff;
+border-bottom-style: solid;
+border-bottom-width: 10px;
+border-bottom-color: transparent;
+margin-top: -10px;
+display: block;
+position: absolute;
+top: 50%;
+right: 1px;
+width: 0;
+height: 0;
+content: "";
+}
+/* edit */
+.edit {
+color: #000;
+background: transparent;
+font: 16px Arial, san-serif;
+border: none;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #d9d9d9;
+padding: 12px;
+vertical-align: middle;
+outline: none;
+}
+.edit:hover {
+border-bottom-color: #97baff;
+}
+.edit:focus {
+border-bottom-style: solid;
+border-bottom-width: 3px;
+border-bottom-color: #6498FF;
+padding-bottom: 10px;
+}
+.editError {
+color: #ff351c;
+background: #ffebe8;
+border-color: #ff351c;
+}
+.editWatermark {
+color: gray;
+}
+.edit[disabled] {
+color: gray;
+border-color: #ebebeb;
+}
+.compact .edit {
+font: 12px Arial, san-serif;
+padding: 4px;
+}
+.compact .edit:focus {
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-bottom-color: #6498FF;
+padding-bottom: 3px;
+}
+/* edit button group */
+.editBG {
+color: #000;
+background: transparent;
+font: 16px Arial, san-serif;
+border: none;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #d9d9d9;
+padding: 0px;
+vertical-align: middle;
+outline: none;
+}
+.editBGHover {
+border-bottom-color: #97baff;
+}
+.editBGFocus {
+border-bottom-style: solid;
+border-bottom-width: 3px;
+border-bottom-color: #6498FF;
+}
+.editBGError {
+color: #ff351c;
+background: #ffebe8;
+border-color: #ff351c;
+}
+.editBGSeparator {
+font-size: 0px;
+padding: 0px;
+width: 0px;
+}
+.editBGEdit {
+color: #000;
+background: transparent;
+font: 16px Arial, san-serif;
+border: none;
+padding: 12px;
+outline: none;
+}
+.editBGButton {
+padding: 12px;
+border-radius: 2px 2px 0px 0px;
+}
+.editBGButtonHover {
+color: #fff;
+background: #97baff;
+}
+.editBGButtonPressed {
+color: #fff;
+background: #6498FF;
+}
+.editBGWatermark {
+color: gray;
+}
+.editBGFocus .editBGEdit, .editBGFocus .editBGButton {
+padding-bottom: 10px;
+}
+.compact .editBGEdit, .compact .editBGButton {
+font: 12px Arial, san-serif;
+padding: 4px;
+}
+.compact .editBGFocus {
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-bottom-color: #6498FF;
+}
+.compact .editBGFocus .editBGEdit, .compact .editBGFocus .editBGButton {
+padding-bottom: 3px;
+}
+/* buttons */
+.button, .buttonDD, .buttonSplit {
+color: #6498FF;
+background: #fff;
+font-size: 16px;
+border: 1px solid #d9d9d9;
+padding: 12px 24px;
+vertical-align: middle;
+border-radius: 2px;
+outline: none;
+}
+.buttonHover {
+color: #fff;
+background: #97baff;
+border-color: #6498FF;
+}
+.buttonPressed {
+color: #fff;
+background: #6498FF;
+border-color: #6498FF;
+}
+.buttonConfirm {
+color: #3c9;
+border-color: #3c9;
+}
+.buttonConfirm.buttonHover {
+color: #fff;
+background: #5cd6ad;
+border-color: #3c9;
+}
+.buttonConfirm.buttonPressed {
+color: #fff;
+background: #3c9;
+border-color: #3c9;
+}
+.buttonDeny {
+color: #f33;
+border-color: #f33;
+}
+.buttonDeny.buttonHover {
+color: #fff;
+background: #ff6666;
+border-color: #f33;
+}
+.buttonDeny.buttonPressed {
+color: #fff;
+background: #f33;
+border-color: #f33;
+}
+.buttonDisabled {
+color: gray;
+border-color: #ebebeb;
+}
+.buttonDD, .buttonSplit {
+padding: 0px;
+}
+.buttonContent {
+color: #6498FF;
+padding: 12px 24px;
+}
+.buttonDDArrow {
+padding: 12px 18px;
+}
+.buttonSplitArrow {
+border-left-style: solid;
+border-left-width: 1px;
+border-left-color: #d9d9d9;
+padding: 12px 18px;
+}
+.buttonDDArrow:after, .buttonSplitArrow:after {
+border: 5px solid transparent;
+border-top-color: #6498FF;
+border-bottom-style: none;
+display: inline-block;
+width: 0px;
+content: "";
+}
+.buttonSplitArrowHover {
+background: #6498FF;
+border-color: #6498FF;
+}
+.buttonHover .buttonSplitArrow {
+border-color: #6498FF;
+}
+.buttonHover .buttonContent {
+color: #fff;
+}
+.buttonHover .buttonDDArrow:after, .buttonHover .buttonSplitArrow:after {
+border-top-color: #fff;
+}
+.buttonPressed .buttonSplitArrow {
+border-color: #97baff;
+}
+.buttonPressed .buttonContent {
+color: #fff;
+}
+.buttonPressed .buttonDDArrow:after, .buttonPressed .buttonSplitArrow:after {
+border-top-color: #fff;
+}
+.buttonDisabled .buttonSplitArrow {
+border-color: #ebebeb;
+}
+.buttonDisabled .buttonContent {
+color: gray;
+}
+.buttonDisabled .buttonDDArrow:after, .buttonDisabled .buttonSplitArrow:after {
+border-top-color: #d9d9d9;
+}
+.buttonGroupFirst {
+margin-right: 0px;
+border-radius: 2px 0px 0px 2px;
+}
+.buttonGroupMid {
+border-left-style: none;
+margin-left: 0px;
+margin-right: 0px;
+border-radius: 0px;
+}
+.buttonGroupLast {
+border-left-style: none;
+margin-left: 0px;
+border-radius: 0px 2px 2px 0px;
+}
+.buttonGroupVFirst {
+margin-bottom: 0px;
+display: block;
+width: 100%;
+border-radius: 2px 2px 0px 0px;
+}
+.buttonGroupVMid {
+border-top-style: none;
+margin-top: 0px;
+margin-bottom: 0px;
+display: block;
+width: 100%;
+border-radius: 0px;
+}
+.buttonGroupVLast {
+border-top-style: none;
+margin-top: 0px;
+display: block;
+width: 100%;
+border-radius: 0px 0px 2px 2px;
+}
+.compact .button, .compact .buttonContent, .compact .buttonDDArrow, .compact .buttonSplitArrow {
+font-size: 12px;
+padding: 4px 8px;
+}
+/* list */
+.list {
+background: #fff;
+border: 1px solid #d9d9d9;
+border-radius: 2px;
+}
+.listHeader {
+background: #f7f7f7;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #d9d9d9;
+padding: 12px;
+}
+.listFooter {
+background: #f7f7f7;
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #d9d9d9;
+padding: 12px;
+}
+.listColHeader {
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #d9d9d9;
+}
+.listColHeaderItem {
+padding: 12px;
+}
+.listColHeaderItemHover {
+background: #f2f2f2;
+}
+.listItem {
+padding: 12px;
+cursor: default;
+}
+.listItemHover {
+color: #fff;
+background: #97baff;
+}
+.listItemSelected {
+color: #fff;
+background: #6498FF;
+}
+.listItemTitle {
+color: gray;
+background: #f7f7f7;
+font-size: 75%;
+font-weight: bold;
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #ebebeb;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #ebebeb;
+padding: 4px;
+}
+.listNav {
+color: #fff;
+background: rgba(0, 0, 0, 0.5);
+padding: 4px;
+border-radius: 2px;
+}
+.listNavButtonNext {
+text-align: center;
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #ebebeb;
+padding: 12px;
+}
+.listNavButtonPrev {
+text-align: center;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #ebebeb;
+padding: 12px;
+}
+.listNavButtonPressed {
+color: #fff;
+background: #6498FF;
+}
+.listFocus {
+border-color: #aabee8;
+}
+.listDisabled {
+color: gray;
+border-color: #ebebeb;
+}
+.listDisabled .listColHeader {
+border-color: #ebebeb;
+}
+.listDisabled .listItemSelected {
+color: gray;
+background: #f2f2f2;
+}
+.listDisabled .listColHeaderItemHover, .listDisabled .listItemHover {
+color: gray;
+background: #fff;
+}
+.compact .listHeader, .compact .listFooter, .compact .listColHeaderItem, .compact .listItem, .compact .listNavButtonNext, .compact .listNavButtonPrev {
+padding: 4px;
+}
+/* spin list */
+.spinList {
+background: #fff;
+border: 1px solid #d9d9d9;
+cursor: default;
+border-radius: 2px;
+}
+.spinList:before {
+background: url("spinListBack.png") 100% 100%;
+display: block;
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+z-index: 2;
+content: "";
+}
+.spinList:after {
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #ebebeb;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #ebebeb;
+margin-top: -14px;
+display: block;
+position: absolute;
+top: 50%;
+left: 0px;
+right: 0px;
+height: 28px;
+z-index: 3;
+content: "";
+}
+.spinListDisabled {
+color: gray;
+border-color: #ebebeb;
+}
+.spinListItem {
+padding: 6px 12px;
+}
+.compact .spinListItem {
+padding: 4px;
+}
+.compact .spinList:after {
+margin-top: -10px;
+height: 20px;
+}
+/* date picker */
+.datePickerDOW {
+color: gray;
+font-size: 75%;
+}
+.datePickerWOY {
+color: gray;
+font-size: 75%;
+}
+.datePickerHeaderItem {
+text-decoration: none;
+color: #6498FF;
+font-weight: bold;
+padding: 12px;
+display: inline-block;
+cursor: default;
+border-radius: 2px;
+outline: none;
+}
+.datePickerDate {
+padding: 1px;
+}
+.datePickerItem {
+text-align: center;
+text-decoration: none;
+color: #000;
+padding: 12px;
+display: block;
+cursor: default;
+border-radius: 2px;
+outline: none;
+}
+.datePickerDateToday .datePickerItem {
+color: #6498FF;
+}
+.datePickerItemHover, .datePickerDateToday .datePickerItemHover, .datePickerHeaderItemHover {
+color: #fff;
+background: #97baff;
+}
+.datePickerItemSelected, .datePickerDateToday .datePickerItemSelected, .datePickerHeaderItemSelected {
+color: #fff;
+background: #6498FF;
+}
+.datePickerItemOOR {
+color: gray;
+}
+.datePickerItemDisabled {
+color: #a6a6a6;
+}
+.datePickerDisabled .datePickerHeaderItem, .datePickerDisabled .datePickerItem {
+color: gray;
+}
+.datePickerDisabled .datePickerDateToday .datePickerItem {
+color: gray;
+}
+.datePickerDisabled .datePickerItemHover, .datePickerDisabled .datePickerDateToday .datePickerItemHover, .datePickerDisabled .datePickerHeaderItemHover {
+color: gray;
+background: transparent;
+}
+.datePickerDisabled .datePickerItemSelected, .datePickerDisabled .datePickerDateToday .datePickerItemSelected, .datePickerDisabled .datePickerHeaderItemSelected {
+color: gray;
+background: transparent;
+}
+.compact .datePickerItem, .compact .datePickerHeaderItem {
+font-size: 12px;
+padding: 4px;
+}
+/* time picker */
+.timePickerMeridian {
+text-decoration: none;
+color: #6498FF;
+font-weight: bold;
+padding: 12px;
+cursor: default;
+border-radius: 2px;
+outline: none;
+}
+.timePickerMeridian:hover {
+color: #fff;
+background: #6498FF;
+}
+.timePickerButton {
+text-align: center;
+text-decoration: none;
+color: #6498FF;
+padding: 12px;
+display: block;
+cursor: default;
+border-radius: 2px;
+outline: none;
+}
+.timePickerButton:hover {
+color: #fff;
+background: #6498FF;
+}
+.timePickerButton:after {
+border: 5px solid transparent;
+border-top-color: gray;
+border-bottom-style: none;
+display: inline-block;
+content: "";
+}
+.timePickerButton:hover:after {
+border-top-color: #fff;
+}
+.timePickerDisabled .edit, .timePickerDisabled .timePickerMeridian, .timePickerDisabled .timePickerButton, .timePickerDisabled .timePickerButton:after, .timePickerDisabled .timePickerButton:hover:after {
+color: #a6a6a6;
+background: transparent;
+border-top-color: #a6a6a6;
+}
+.compact .timePickerMeridian, .compact .timePickerButton {
+font-size: 12px;
+padding: 4px;
+}
+.compact .timePickerButton:after {
+border-width: 3px;
+}
+/* slider */
+.slider {
+cursor: default;
+height: 40px;
+}
+.sliderInner {
+background: #d9d9d9;
+margin: 18px;
+height: 4px;
+border-radius: 2px;
+}
+.sliderRange {
+background: #97baff;
+margin-top: -1px;
+height: 6px;
+border-radius: 3px;
+}
+.sliderHandle {
+background: #fff;
+border: 1px solid #d9d9d9;
+margin-top: -20px;
+margin-left: -20px;
+width: 40px;
+height: 40px;
+border-radius: 28px;
+}
+.sliderRangeHover {
+background: #6498FF;
+}
+.sliderHandleHover {
+background: #97baff;
+border-color: #6498FF;
+}
+.sliderRangeSelected {
+background: #6498FF;
+}
+.sliderHandleSelected {
+background: #6498FF;
+border-color: #6498FF;
+}
+.sliderDisabled .sliderHandle {
+background: #fff;
+border-color: #ebebeb;
+}
+.sliderDisabled .sliderRange, .sliderDisabled .sliderInner {
+background: #ebebeb;
+}
+.compact .slider {
+height: 20px;
+}
+.compact .sliderInner {
+margin: 10px;
+}
+.compact .sliderHandle {
+margin-top: -10px;
+margin-left: -10px;
+width: 20px;
+height: 20px;
+}
+/* switch */
+.switch {
+color: gray;
+background: #f2f2f2;
+border: 1px solid #d9d9d9;
+cursor: default;
+height: 40px;
+border-radius: 28px;
+}
+.switchInner {
+margin-left: 20px;
+margin-right: 20px;
+}
+.switchButton {
+background: #fff;
+border: 1px solid #d9d9d9;
+margin: 1px;
+margin-left: -18.5px;
+width: 34px;
+height: 34px;
+border-radius: 28px;
+}
+.switchOn {
+color: #fff;
+background: #6498FF;
+border-color: #6498FF;
+}
+.switchOn .switchButton {
+border-color: #fff;
+}
+.switchLeft {
+text-align: center;
+padding: 9.6px;
+padding-left: 0px;
+padding-right: 28px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.switchRight {
+text-align: center;
+padding: 9.6px;
+padding-left: 28px;
+padding-right: 0px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.switchDisabled.switch {
+color: #a6a6a6;
+background: #f7f7f7;
+border: 1px solid #ebebeb;
+}
+.switchDisabled .switchButton {
+border: 1px solid #ebebeb;
+}
+.switchDisabled.switchOn {
+color: #a6a6a6;
+background: #ebebeb;
+border-color: #ebebeb;
+}
+.compact .switch {
+height: 20px;
+border-radius: 16px;
+}
+.compact .switchInner {
+margin-left: 10px;
+margin-right: 10px;
+}
+.compact .switchButton {
+margin-left: -9px;
+width: 14px;
+height: 14px;
+border-radius: 16px;
+}
+.compact .switchLeft {
+padding: 2px;
+padding-left: 0px;
+padding-right: 12px;
+}
+.compact .switchRight {
+padding: 2px;
+padding-left: 12px;
+padding-right: 0px;
+}
+/* scroll indicator */
+.scrollIndH, .scrollIndV {
+padding: 0px;
+width: 5px;
+height: 5px;
+}
+.scrollIndHBar, .scrollIndVBar {
+background: rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+}
