@@ -1,74 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-		<meta charset="utf-8">
-	<title>Alpha Software: Release Notes for Alpha Anywhere (Alpha Five Version 12)</title>
-
-
-	<style>
-<!--
-p, ul, li            { font-family: Tahoma; width: 7in; font-size: 9pt; margin-left: .5in; margin-top:0px; margin-bottom:5px }
-.xbasic      { font-family: Courier New; font-size: 10pt; color: #0000FF; margin-left: 1.1in;
-               margin-top: 0; margin-bottom: 0 }
-.xbasicSmall      { font-family: Courier New; font-size: 9pt; color: #0000FF; margin-left: .75in;
-               margin-top: 0; margin-bottom: 0 }
-
-.xbasicSmallSpan      { font-family: Courier New; font-size: 9pt; color: #0000FF;  }
-
-.xbasicSmallWide      { font-family: Courier New; font-size: 9pt; color: #0000FF; margin-left: .75in;
-               margin-top: 0; margin-bottom: 0; width: 1000px; }
-               
-td           { font-family: Tahoma; font-size: 8pt; VERTICAL-ALIGN: top}
-h1           { font-family: Tahoma; font-size: 11pt; color: #ff0000 }
-h2           { font-family: Tahoma; font-size: 10pt ; color: #ff0000}
-h4 			  {font-family: Tahoma; font-size: 9pt; font-weight: bold; color: #ff0000}
-h3           { font-family: Tahoma; font-size: 10pt ; color: #ff0000; margin-left: .5in;}
-.note		{ padding: 10px; background-color: #f0f0f0;	border-radius: 3px;}            
-
-BODY {font-family="Arial"}
-BLOCKQUOTE.CITE {margin:0; padding-left:0.5em; border-left:medium none solid 2;}
-.page
-{
-	background: #FFFFFF;
-	color: #000000;
-}
-.tborder
-{
-	background: #D1D1E1;
-	color: #000000;
-	border: 1px solid #0B198C;
-}
-.alt1
-{
-	background: #F5F5FF;
-	color: #000000;
-}
-.alt2
-{
-	background: #E1E4F2;
-	color: #000000;
-}
- li.MsoNormal
-	{mso-style-parent:"";
-	margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";
-	margin-left:0in; margin-right:0in; margin-top:0in}
-.tableText {font-family: tahoma; font-size: 8pt;}
-.rowOdd { background-color:#f1f2f2;}
-
-.GrBluePage {
-color: Black;
-font: 10pt Calibri, Tahoma, Arial;
-}
-.A5CWLayout {padding: 4px; float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
--->
-</style>
-
-
-
-
-</head>
 <body bgcolor="#ffffff">
 
 
@@ -1172,11 +1101,4 @@ font: 10pt Calibri, Tahoma, Arial;
 		scanning functionality is accomplished with a PhoneGap plug-in, as well 
 		as the iOS-specific code for the device statusbar.</p>
 		<p><a href="http://www.viddler.com/v/b8617761">Watch Video</a></p>
-						</body></html>
-						
-						
-						
-						<!--
-http://www.ajaxvideotutorials.com/V12Videos/
--->
-			
+						</body>
