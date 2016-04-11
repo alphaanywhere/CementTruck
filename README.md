@@ -1,4 +1,6 @@
-		<p>&nbsp;</p>
+<html>
+	<body>
+			<p>&nbsp;</p>
 		<h1>FormView Control</h1>
 		<p>The FormView control is used to create a special type of 'form' on a 
 		UX component. Touch-optimized, mobile forms are built using the FormView 
@@ -1099,3 +1101,5 @@
 		as the iOS-specific code for the device statusbar.</p>
 		<p><a href="http://www.viddler.com/v/b8617761">Watch Video</a></p>
 
+	</body>
+</html?
