@@ -1,5 +1,14 @@
 <html>
 <body>
+
+<h1>How to Download and Install this Project</h1>
+<ol>
+<li>Click the Clone or download button and select the Download Zip option to download the sample application.</li>
+<li>Extract all files from the .zip file.</li>
+<li>When extraction is complete, launch Alpha Anywhere and open the Alpha Anywhere .adb file located inside the folder where the extracted files were saved.</li>
+</ol>
+<p>For detailed instructions, see <a href="https://www.alphasoftware.com/documentation/index?search=how%20to%20download%20a%20sample%20app%20from%20the%20alpha%20anywhere%20github%20repository">How to download a Sample App from the Alpha Anywhere GitHub Repository</a>.</p>
+
 		<h1>FormView Control</h1>
 		<p>The FormView control is used to create a special type of 'form' on a 
 		UX component. Touch-optimized, mobile forms are built using the FormView 
